@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: 'Karla', Arial, sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background-color: hsl(204, 43%, 93%);
+	/*background: linear-gradient(35deg, #cff, #fcc);*/
+	font-weight: 400;
+}
+
+.card {
+	width: 640px;
+	box-shadow: 0 0 15px #ccc;
+	margin: 80px auto;
+	border-radius: 10px;
+}
+
+.flex {
+	display: flex;
+}
+
+.content {
+	padding: 30px;
+	background-color: #fff;
+}
+
+.flex .content {
+	width: 320px;
+	background-color: hsl(179, 62%, 43%);
+	color: #fff;
+}
+
+h1, h2 {
+	padding-bottom: 16px;
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 2px;
+	line-height: 24px;
+}
+
+/* JOIN US CONFIG */
+#join-us {
+	border-radius: 10px 10px 0 0;
+}
+
+h1 {
+	color: hsl(179, 62%, 43%);
+}
+
+#join-us h2 {
+	color: hsl(71, 73%, 54%);
+	padding-top: 10px;
+}
+
+#join-us p {
+	color: hsl(218, 22%, 67%);
+}
+
+/* SUBSCRIPTION CONFIG */
+#subscript {
+	background-color: hsl(179, 62%, 40%);
+	border-radius: 0 0 0 10px;
+}
+
+.price span {
+	font-weight: 700;
+	font-size: 28px;
+	margin-right: 10px;
+}
+
+.price p {
+	align-self: center;
+	opacity: 0.6;
+}
+
+#subscript button {
+	padding: 10px;
+	margin-top: 30px;
+	width: 100%;
+	color: #fff;
+	background-color: hsl(71, 73%, 54%);
+	border: 1px solid hsl(71, 73%, 54%);
+	border-radius: 5px;
+	box-shadow: 0 2px 10px #999;
+	transition: 1s;
+}
+
+#subscript button:hover {
+	cursor: pointer;
+	background-color: hsl(71, 73%, 44%);
+	border: 1px solid hsl(71, 73%, 44%);
+}
+
+/* BENEFIT CONFIG */
+#benefit {
+	border-radius: 0 0 10px 0;
+}
+
+#benefit p {
+	font-size: 14px;
+	line-height: normal;
+	opacity: 0.6;
+}
+
+/* MOBILE VIEWPORT 375 px */
+
+@media screen and (max-width: 644px) {
+	body {
+		padding: 10px;
+	}
+
+	.card {
+		width: 644px;
+		max-width: 100%;
+	}
+
+	article { 
+		/* flex article */
+		flex-direction: column;
+		border-radius: 0 0 10px 10px;
+	}
+
+	.flex .content {
+		width: inherit;
+	}
+
+	#subscript, #benefit {
+		border-radius: 0;
+	}
+
+	#benefit {
+		border-radius: 0 0 10px 10px;
+	}
+
+	.attribution {
+		text-align: center;
+	}
+}
